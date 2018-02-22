@@ -1,13 +1,19 @@
 .App {
   padding :20px;
   text-align: center;
+  height: 600px;
+  background-color: #9c92ac;
+}
+.piechart{
+  height: 200px;
+  width: 200px;
+  margin : 0 auto;
 }
 
 
-
 .App-header {
-    background-color: #9c92ac;
-  height: 600px;
+    
+  
   padding: 20px;
   color: white;
   font-size: 3em;
