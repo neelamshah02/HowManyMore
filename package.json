@@ -4,13 +4,11 @@
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
-    "react-charts-plus": "^0.4.5",
     "react-dom": "^16.2.0",
     "react-minimal-pie-chart": "^3.0.1",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
-    "react-svg-piechart": "^2.0.3",
-    "react-charts-plus":"^0.0.0"
+    "react-p5-wrapper": "0.0.4"
   },
   "scripts": {
     "start": "react-scripts start",
