@@ -1,36 +1,36 @@
 
+export default function sketch (p) {
 var shootings; //JSON data of shootings
 var width;
 var height;
 var isPreLoadDone;
 var incidents = [];
 
-
-function getShootingData(){
+p.getShootingData = function (){
 
   //get current weather data
 
   var url = 'https://public.opendatasoft.com/api/records/1.0/search/?dataset=mass-shootings-in-america&rows=80&refine.school_related=Yes&sort=date';
 
   //get mass shooting data for schools
-  shootings = loadJSON(url);
+  shootings = p.loadJSON(url);
 
 }
 
-function preload() {
-  getShootingData();
+p.preload = function (){
+  p.getShootingData();
   isPreLoadDone = true;
 }
 
 
-function setup() {
+p.setup = function (){
 
   width = document.getElementById('chartShootings').offsetWidth;
   height = document.getElementById('chartShootings').offsetHeight;
 
-  var canvas = createCanvas(width, height);
+  var canvas = p.createCanvas(width, height);
   canvas.parent("chartShootings");
-  background('rgb(229, 255, 226)');
+  p.background('rgb(229, 255, 226)');
 
   for(var i=0;i<shootings.records.length;i++){
 
@@ -48,7 +48,7 @@ function setup() {
 
 
 
-function draw(){
+p.draw = function (){
     //total_number_of_fatalities - size of the bubble
     //date - month as x axis and year as y axis
     //data_source_1 is the link to the aritcle
@@ -57,18 +57,18 @@ function draw(){
       var y;
       var r;
       var strokeWeight;
-      fill('red');
-      noStroke();
-      ellipse(10, 10, 1, 1);
+      p.fill('red');
+      p.noStroke();
+      p.ellipse(10, 10, 1, 1);
 
     for(var i=0;i<incidents.length;i++){
-       x = map(incidents[i].month,1,12,10,width-10); //min 1966-08-01 max2016-02-09
-       y = map(incidents[i].year,1966,2016,height-10,10);
-       r = map(incidents[i].fatalities,0,32,10,25);  // min 0 max 32
-       strokeWeight = map(incidents[i].injured,0,32,2,10);  // min 0 max 32
-       stroke(strokeWeight  );
-       stroke('rgba(0 ,255,255,0.5)')
-       ellipse(x, y, r, r);
+       x = p.map(incidents[i].month,1,12,10,width-10); //min 1966-08-01 max2016-02-09
+       y = p.map(incidents[i].year,1966,2016,height-10,10);
+       r = p.map(incidents[i].fatalities,0,32,10,25);  // min 0 max 32
+       strokeWeight = p.map(incidents[i].injured,0,32,2,10);  // min 0 max 32
+       p.stroke(strokeWeight  );
+       p.stroke('rgba(0 ,255,255,0.5)')
+       p.ellipse(x, y, r, r);
        //console.log("x = "+x);
        //console.log("y = "+y);
 
@@ -86,4 +86,5 @@ function draw(){
     // }, 0);
 
 
+}
 }
