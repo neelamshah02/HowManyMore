@@ -45,29 +45,6 @@ class Home extends Component {
           this.state.data[count]=obj;
         }
       }
-      //console.log('data in state',this.state.data);
-      /*for(var j=0;j<data.length;j++){
-        var flag=0;
-        for(var m=0;m<this.state.data.length;m++){
-          if(data[j].eventname == this.state.data[m].eventname){
-            flag=1;
-          }
-        }
-        if(flag==0){
-          var temparr = data.filter(function(temp){
-            //console.log(data);
-            return temp.eventname=data.eventname;
-          }.bind(data));
-          console.log('temparr',temparr);
-          var count=0;
-          for(var i=0;i<temparr.length;i=i+3){
-              this.state.data[count]=[data[i],data[i+1],data[i+2]];
-              count++;
-          }
-        }
-      }*/
-
-      //console.log(this.state.data);
    }
    render() {
      //console.log(data);
@@ -86,7 +63,7 @@ class Home extends Component {
                            return(
                               <div key={i2}>
                                  <p>
-                                     <img src={e2.imageurl}></img>
+                                     <img className="imagecss" src={e2.imageurl}></img>
                                  </p>
                                  <p>
                                      {e2.name}

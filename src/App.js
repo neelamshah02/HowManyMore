@@ -10,17 +10,13 @@ class App extends Component {
     return (
       <Router>
             <div className="App">
-            <div className = "App-header"> Welcome to Digital Hackathon London </div>
+            <div className = "App-header">How Many More? </div>
             <div className="topnav">
-
                <a><Link to={'/'}>Home</Link></a>
                <a><Link to={'/pieChart'}>PieChart</Link></a>
                <a><Link to={'/dotMap'}>DotMap</Link></a>
-
               </div>
-
                <hr />
-
                <Switch>
                   <Route exact path='/' component={Home} />
                   <Route exact path='/pieChart' component={Piechart} />

@@ -1,0 +1,86 @@
+[
+  {
+  "name":"Mental illness",
+  "path":"Mental illness",
+  "count":19,
+  "state":"displayed"
+  },
+  {
+  "name":"Multiple motives",
+  "path":"Multiple motives",
+  "count":10,
+  "state":"displayed"
+  },
+  {
+  "name":"Unknown",
+  "path":"Unknown",
+  "count":8,
+  "state":"displayed"
+  },
+  {
+  "name":"Social dispute",
+  "path":"Social dispute",
+  "count":7,
+  "state":"displayed"
+  },
+  {
+  "name":"Failure",
+  "path":"Failure",
+  "count":6,
+  "state":"displayed"
+  },
+  {
+  "name":"Expulsion/Suspension",
+  "path":"Expulsion/Suspension",
+  "count":5,
+  "state":"displayed"
+  },
+  {
+  "name":"Harassment",
+  "path":"Harassment",
+  "count":5,
+  "state":"displayed"
+  },
+  {
+  "name":"Terminated/Denied/Reprimanded",
+  "path":"Terminated/Denied/Reprimanded",
+  "count":4,
+  "state":"displayed"
+  },
+  {
+  "name":"Rejection",
+  "path":"Rejection",
+  "count":3,
+  "state":"displayed"
+  },
+  {
+  "name":"Domestic dispute",
+  "path":"Domestic dispute",
+  "count":2,
+  "state":"displayed"
+  },
+  {
+  "name":"Legal dispute",
+  "path":"Legal dispute",
+  "count":1,
+  "state":"displayed"
+  },
+  {
+  "name":"Political/Religious ideals",
+  "path":"Political/Religious ideals",
+  "count":1,
+  "state":"displayed"
+  },
+  {
+  "name":"Race",
+  "path":"Race",
+  "count":1,
+  "state":"displayed"
+  },
+  {
+  "name":"Social Dispute",
+  "path":"Social Dispute",
+  "count":1,
+  "state":"displayed"
+  }
+  ]
