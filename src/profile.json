@@ -28,5 +28,12 @@
       "imageurl": "https://cdn.cnn.com/cnnnext/dam/assets/180215065133-aaron-feis-fl-school-shooting-victim-exlarge-169.jpg",
       "eventdate": "2018-02-21",
       "name": "Aaron Feis"
+   },
+   {
+   "eventname": "Kentucky school shooting",
+   "imageurl": "https://cdn.cnn.com/cnnnext/dam/assets/180124105752-kentucky-school-shooting-victims-medium-plus-169.jpg",
+   "eventdate": "2018-01-24",
+   "name": "Bailey and Preston"
    }
+
 ]
