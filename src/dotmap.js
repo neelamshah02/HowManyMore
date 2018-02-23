@@ -9,8 +9,8 @@ class Piechart extends Component {
    render() {
 
       return (
-        <div>
-          <div id="chartShootings"  style={{height: '600px', width:'250px'}}>this is where dotchart  will go</div>
+        <div style={{align:'center'}}>
+          <div id="chartShootings"  style={{height: '600px', width:'100%'}}></div>
          <P5Wrapper sketch={Sketch} />
         </div>
       );
