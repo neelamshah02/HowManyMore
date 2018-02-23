@@ -6,7 +6,8 @@ class Piechart extends Component {
    render() {
       let color =['#e6194b','#3cb44b','#ffe119','#0082c8','#f58231','#911eb4','#46f0f0','#f032e6','#d2f53c','#fabebe','#008080','#e6beff'];
       return (
-        <div>
+        <div style={{margin:'auto',textAlign:'center'}}>
+         <h3>Motives Of Shootings in US</h3>
          <PieChart className = "piechart"
 
               data={[
@@ -24,14 +25,16 @@ class Piechart extends Component {
                 { value: data[11].count, key: data[11].name, color: color[11] }
               ]}
             />
+            <br />
+            <br />
             {color.map((e1,i1)=>{
               return(
-                <div >
+                <div style={{margin:'auto',width:'300px'}}>
                 <table style={{paddingLeft:"20px"}}>
-                <tr > 
-                  <td><div style={{backgroundColor:e1,height:'10px',width:'10px', }}></div></td>
+                <tr>
+                  <td><div style={{backgroundColor:e1,height:'10px',width:'10px'}}></div></td>
                   <td><span className="bulletData">{data[i1]["name"]}</span> </td>
-                  
+
                 </tr>
                 </table>
                 </div>

@@ -50,6 +50,12 @@
   .imagecss{
     width:300px;
   }
+  .dotchartcss{
+    height: '600px';
+    width:'250px';
+    text-align:'center';
+    margin:'auto';
+  }
 }
 
 
@@ -59,8 +65,8 @@
     background-color: #92a8d1;
   }
   .piechart{
-    height: 600px;
-    width: 600px;
+    height: 400px;
+    width: 400px;
     margin : 0 auto;
   }
 
@@ -105,5 +111,11 @@
   }
   .imagecss{
     width:500px;
+  }
+  .dotchartcss{
+    height: '600px';
+    width:'450px';
+    text-align:'center';
+    margin:'auto';
   }
 }

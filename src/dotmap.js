@@ -10,7 +10,7 @@ class Piechart extends Component {
 
       return (
         <div style={{textAlign:'center',margin:'auto'}}>
-          <div id="chartShootings"  style={{height: '600px', width:'250px',textAlign:'center',margin:'auto'}}></div>
+          <div id="chartShootings" className="dotchartcss" style={{height: '600px',width:'80%',textAlign:'center',margin:'auto'}}></div>
          <P5Wrapper sketch={Sketch} />
         </div>
       );
