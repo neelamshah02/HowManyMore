@@ -26,8 +26,14 @@ class Piechart extends Component {
             />
             {color.map((e1,i1)=>{
               return(
-                <div>
-                  <p style={{backgroundColor:e1,height:'30px',width:'30px'}}></p><p>{data[i1]["name"]}</p>
+                <div >
+                <table style={{paddingLeft:"20px"}}>
+                <tr > 
+                  <td><div style={{backgroundColor:e1,height:'10px',width:'10px', }}></div></td>
+                  <td><span className="bulletData">{data[i1]["name"]}</span> </td>
+                  
+                </tr>
+                </table>
                 </div>
               )
             })}
